@@ -104,6 +104,7 @@
           
 ---
 
+
   * `float` 속성은 왜 좋지 않을까요?
   * Flexbox(Flexible box)와 CSS Grid의 차이와 장단점은 무엇일까요?
   * CSS의 비슷한 요소들을 어떤 식으로 정리할 수 있을까요?
