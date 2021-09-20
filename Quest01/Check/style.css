@@ -1,0 +1,29 @@
+/* 태그 */
+h1{
+    color: #2dcb2d;
+}
+/* .은 클래스 */
+.naver_input{
+    border: 2px solid #2dcb2d;
+}
+
+/* 가상설렉터 방식 */
+/* .naver_input의 자식은 input 이다 -> 이걸 가상 설렉트로 표현 하면 밑에 사용을 보여줌! */
+.naver_input input{
+    border: none;
+}
+.one{
+    color: #2dcb2d;
+}
+/* one이랑 같은 부모를 가진 형제를 지정 해줌 */
+/*
+.one + .one{
+    color: blueviolet;
+}
+*/
+
+/* #은 아이디 */
+.fas{
+    color:#2dcb2d;
+}
+
