@@ -1,3 +1,52 @@
+:root {
+    /* Color */
+    --blue-color:#045fd4;
+    --pink-color:#dc5eff;
+    --green-color: #29d729;
+    --grey-light-color:#e0e0e0;
+
+    /* Size */
+    --padding:13px;
+
+    /* Font Size */
+    --font-medium:14px;
+
+}
+/* 모든 태그에 패딩,마진 빼버리고 박스사이즈도 패딩,마진 뺄때 포함되어 결정하는것*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+
+
+/* 가운데 정렬 */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.naver_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* 태그 */
 h1{
     color: #2dcb2d;
