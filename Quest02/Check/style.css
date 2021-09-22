@@ -6,10 +6,10 @@
     --grey-light-color:#e0e0e0;
 
     /* Size */
-    --padding:13px;
+    --padding:10px;
 
     /* Font Size */
-    --font-medium:14px;
+    --font-medium:10px;
 
 }
 /* 모든 태그에 패딩,마진 빼버리고 박스사이즈도 패딩,마진 뺄때 포함되어 결정하는것*/
@@ -23,17 +23,27 @@ body{
     font-family: Roboto;
 }
 
-
-
-/* 가운데 정렬 */
-h1 {
+/* 아이콘,컬러 넣고 중앙정렬 */
+ul li button {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+
+}
+/* 아이콘 사이즈,컬러 */
+ul li i {
+    font-size: 20px;
+    color: #045fd4;
 }
 
-.naver_input {
+/* 태그, 가운데 정렬 */
+h1 {
+    color: #2dcb2d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,15 +55,27 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
-/* 태그 */
-h1{
-    color: #2dcb2d;
+.actions2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
 /* .은 클래스 */
 .naver_input{
-    border: 2px solid #2dcb2d;
+    border: 1px solid #2dcb2d;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    /*margin-top: 10px;*/
+    height: 30px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 /* 가상설렉터 방식 */
@@ -72,7 +94,15 @@ h1{
 */
 
 /* #은 아이디 */
-.fas{
+.naver_input .fas{
     color:#2dcb2d;
 }
+/* 터치바 */
+.naver_input .scber {
+    flex: 1 1 70%;
+    margin-left: 3px;
+}
+.naver_input .scber:focus {
+    outline: none;
 
+}
