@@ -1,25 +1,33 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     /* Color */
-    --blue-color:#045fd4;
-    --pink-color:#dc5eff;
+    --blue-color: #045fd4;
+    --pink-color: #dc5eff;
     --green-color: #29d729;
-    --grey-light-color:#e0e0e0;
+    --grey-light-color: #e0e0e0;
 
     /* Size */
-    --padding:10px;
+    --padding: 10px;
 
     /* Font Size */
-    --font-medium:10px;
+    --font-medium: 10px;
 
 }
+
 /* 모든 태그에 패딩,마진 빼버리고 박스사이즈도 패딩,마진 뺄때 포함되어 결정하는것*/
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Roboto;
 }
 
@@ -29,12 +37,13 @@ ul li button {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 50px;
     width: 55px;
     height: 55px;
     margin-top: 10px;
 
 }
+
 /* 아이콘 사이즈,컬러 */
 ul li i {
     font-size: 20px;
@@ -43,11 +52,15 @@ ul li i {
 
 /* 태그, 가운데 정렬 */
 h1 {
+    font-family: 'IBMPlexSansKR-Bold';
+    font-weight: bolder;
     color: #2dcb2d;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 46px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .icon {
@@ -66,26 +79,28 @@ h1 {
 }
 
 /* .은 클래스 */
-.naver_input{
+.naver_input {
     border: 1px solid #2dcb2d;
     display: flex;
     align-items: center;
     width: 70%;
     margin: 0 auto;
     /*margin-top: 10px;*/
-    height: 30px;
+    height: 40px;
     justify-content: space-between;
     padding: 10px;
 }
 
 /* 가상설렉터 방식 */
 /* .naver_input의 자식은 input 이다 -> 이걸 가상 설렉트로 표현 하면 밑에 사용을 보여줌! */
-.naver_input input{
+.naver_input input {
     border: none;
 }
-.one{
+
+.one {
     color: #2dcb2d;
 }
+
 /* one이랑 같은 부모를 가진 형제를 지정 해줌 */
 /*
 .one + .one{
@@ -94,15 +109,44 @@ h1 {
 */
 
 /* #은 아이디 */
-.naver_input .fas{
-    color:#2dcb2d;
+.naver_input .fas {
+    color: #2dcb2d;
 }
+
 /* 터치바 */
 .naver_input .scber {
     flex: 1 1 70%;
-    margin-left: 3px;
+    margin-left: 2px;
 }
+
 .naver_input .scber:focus {
     outline: none;
+}
+
+/* weather */
+.bundle {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /*justify-content: center;*/
+    margin: 0 10px;
+    padding: 100px;
 
 }
+
+.weather {
+    border: 1px solid #7b7b7b;
+    height: 5px;
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    padding: 35px;
+    justify-content: space-between;
+    /*border: none;*/
+}
+
+.wea {
+    display: flex;
+    flex-flow: column;
+}
+
