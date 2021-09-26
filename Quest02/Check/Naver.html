@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>narupee NAVER</title>
@@ -11,6 +12,8 @@
             crossorigin="anonymous"
     ></script>
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 
 </head>
 <body>
@@ -18,97 +21,95 @@
 <header>
     <div class="fu">
         <div class="icons"><i class="fas fa-bars fa-lg"></i></div>
-        <div class="fuu"><p align="right"><img src="../images/nnni.png" alt="하"></div>
+        <div class="fuu"><img src="../images/nnni.png" alt="하"></div>
         <div class="fuu"><img class="nni" src="../images/nni.png" alt="하"></div>
         <div class="fuu"><img class="ni" src="../images/ni.png" alt="하"></div>
     </div>
 </header>
 
-<h1 class="na"><b>NAVER</b></h1>
-<div class="naver_input">
-    <input class="scber" type="text" placeholder="검색어를 입력해주세요.">
-    <div class="icons">
-        <i class="fas fa-microphone"></i>
-        <i class="fas fa-camera"></i>
-        <i class="fas fa-map-marker-alt"></i>
+<section class="main">
+    <h1 class="na"><b>NAVER</b></h1>
+    <div class="naver_input">
+        <input class="scber" type="text" placeholder="검색어를 입력해주세요.">
+        <div class="icons">
+            <i class="fas fa-microphone"></i>
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <!-- span은 div의 자식이다
+             div는 span의 부모이다
+             즉, 관계 라고 한다. -->
     </div>
-    <!-- span은 div의 자식이다
-         div는 span의 부모이다
-         즉, 관계 라고 한다. -->
-</div>
-<div>
+    <div>
+        <!-- ul li : 가운데 정렬 리스트 -->
+        <ul class="actions">
 
-    <!-- ul li : 가운데 정렬 리스트 -->
-    <ul class="actions">
+            <li class="icon">
+                <button onclick="location.href='https://news.naver.com/'"><i class="fas fa-newspaper"></i>
+                    <span>뉴스판</span></button>
 
-        <li class="icon">
-            <button onclick="location.href='https://news.naver.com/'"><i class="fas fa-newspaper"></i>
-                <span>뉴스판</span></button>
+                <button onclick="location.href='https://finance.naver.com/'"><i class="far fa-chart-bar"></i>
+                    <span>경제판</span></button>
 
-            <button onclick="location.href='https://finance.naver.com/'"><i class="far fa-chart-bar"></i>
-                <span>경제판</span></button>
+                <button onclick="location.href='https://entertain.naver.com/home'"><i class="fas fa-heart"></i>
+                    <span>연예판</span></button>
 
-            <button onclick="location.href='https://entertain.naver.com/home'"><i class="fas fa-heart"></i>
-                <span>연예판</span></button>
+                <button onclick="location.href='https://datalab.naver.com/'">
+                    <i class="fas fa-star-half-alt"></i><span>트렌드판</span></button>
+            </li>
 
-            <button onclick="location.href='https://datalab.naver.com/'">
-                <i class="fas fa-star-half-alt"></i><span>트렌드판</span></button>
-        </li>
+            <li class="actions2">
+                <button onclick="location.href='https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fmail.naver.com%2F'">
+                    <i class="fas fa-envelope-square"></i><span>메일</span></button>
 
-        <li class="actions2">
-            <button onclick="location.href='https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fmail.naver.com%2F'">
-                <i class="fas fa-envelope-square"></i><span>메일</span></button>
+                <button onclick="location.href='https://section.cafe.naver.com/ca-fe/'"><i class="fas fa-mug-hot"></i>
+                    <span>카페</span></button>
 
-            <button onclick="location.href='https://section.cafe.naver.com/ca-fe/'"><i class="fas fa-mug-hot"></i>
-                <span>카페</span></button>
+                <button onclick="location.href='https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0'">
+                    <i class="fab fa-blogger"></i><span>블로그</span></button>
 
-            <button onclick="location.href='https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0'">
-                <i class="fab fa-blogger"></i><span>블로그</span></button>
+                <button onclick="location.href='https://www.naver.com/'"><i class="far fa-comment-dots"></i>
+                    <span>more</span></button>
+            </li>
+        </ul>
+    </div>
 
-            <button onclick="location.href='https://www.naver.com/'"><i class="far fa-comment-dots"></i>
-                <span>more</span></button>
+    <ul class="bundle">
+
+        <li class="weather">
+            <img class="mn" src="../images/mo.png" alt="확인">
+            <span class="wea">10˚도 맑음<br>어제보다 2˚도 높아요.</span>
+            <div class="jj"></div>
+            <span class="tew">NOW.<br>지금 방송중</span>
+            <img class="wr" src="../images/n1.png" alt="확인">
         </li>
     </ul>
-</div>
 
-<ul class="bundle">
-
-    <li class="weather">
-        <i class="fas fa-moon"></i>
-        <span class="wea">10c도 맑음<br>어제보다 2c도 높아요.</span> |
-        <span>NOW.<br>지금 방송중</span>
-        <img class="wr" src="../images/n1.png" alt="확인">
-    </li>
-
-    <li class="corona">날씨
-        <span>서울시 잠실동</span>
-    <li>
-        <button onclick="location.href='https://www.naver.com/'"><span>시간대별 날씨</span></button>
-    </li>
-    <li>
-        <button onclick="location.href='https://www.naver.com/'"><span>시간대별 미세먼지</span></button>
-    </li>
-    <li>
-        <button onclick="location.href='https://www.naver.com/'"><span>주간 날씨</span></button>
-    </li>
-    <li>
-        <button onclick="location.href='https://www.naver.com/'"><span>주간 미세먼지</span></button>
-    </li>
-    <li>
-        <script src="https://weather.naver.com/today/11720330" crossorigin="anonymous"></script>
-    </li>
+    <div class="coli">
+        <span> <b>날씨</b> 서울시 잠실동</span>
+        <ul>
+            <button class="b1" onclick="location.href='https://www.naver.com/'"><span>시간대별 날씨</span></button>
+            <button class="b2" onclick="location.href='https://www.naver.com/'"><span>시간대별 미세먼지</span></button>
+            <button class="b3" onclick="location.href='https://www.naver.com/'"><span>주간 날씨</span></button>
+            <button class="b4" onclick="location.href='https://www.naver.com/'"><span>주간 미세먼지</span></button>
+            <script src="https://weather.naver.com/today/11720330" crossorigin="anonymous"></script>
+        </ul>
+        <img class="coimg" src="../images/cog.png" alt="날씨">
+    </div>
 
 
-    <li class="notice">
-    <li><span>코로나19<br>국내외 확진 현황</span></li>
-    <li><span>코로나19 팩트체크<br>백신 정보 팩트는?</span></li>
-    <li class="lnfo"><img class="lf" src="../images/dp.png" alt="제102주년">
-        <span class="lff">제102주년 <b class="lfft">대한민국 임시정부 수립일</b></span></li>
-    <li class="app"><span>앱으로 새로운 네이버를 더 쾌적하게 사용해 보세요.</span></li>
-    <li class="comics"><span>웹툰</span></li>
-    <li class="place"><span>인기 주제 판을 확인해 보세요!</span></li>
-    <li class="update"><span>네이버앱 업데이트 사전 안내</span></li>
-</ul>
+    <ul class="bundle">
+        <li class="notice">
+        <li><span>코로나19<br>국내외 확진 현황</span></li>
+        <li><span>코로나19 팩트체크<br>백신 정보 팩트는?</span></li>
+        <li class="lnfo"><img class="lf" src="../images/dp.png" alt="제102주년">
+            <span class="lff">제102주년 <b class="lfft">대한민국 임시정부 수립일</b></span></li>
+        <li class="app"><span>앱으로 새로운 네이버를 더 쾌적하게 사용해 보세요.</span></li>
+        <li class="comics"><span>웹툰</span></li>
+        <li class="place"><span>인기 주제 판을 확인해 보세요!</span></li>
+        <li class="update"><span>네이버앱 업데이트 사전 안내</span></li>
+    </ul>
+</section>
 <ul class="text_t">
     <li class="te"><span>로그인 | 전체서비스 | PC버전 <br>이용약관 | <b class="bt">개인정보처리방침</b> | 고객센터</span></li>
     <li class="xt"><span>NAVER</span></li>

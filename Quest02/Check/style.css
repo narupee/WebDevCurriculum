@@ -20,7 +20,7 @@
 
 }
 
-/* 모든 태그에 패딩,마진 빼버리고 박스사이즈도 패딩,마진 뺄때 포함되어 결정하는것*/
+/* 紐⑤뱺 �쒓렇�� �⑤뵫,留덉쭊 鍮쇰쾭由ш퀬 諛뺤뒪�ъ씠利덈룄 �⑤뵫,留덉쭊 類꾨븣 �ы븿�섏뼱 寃곗젙�섎뒗寃�*/
 * {
     padding: 0;
     margin: 0;
@@ -31,8 +31,13 @@
 body {
     font-family: Roboto;
 }
+/* �뱀뀡 */
+.main {
+    margin: 0 auto;
+    flex-direction: column;
+}
 
-/* 아이콘,컬러 넣고 중앙정렬 */
+/* �꾩씠肄�,而щ윭 �ｊ퀬 以묒븰�뺣젹 */
 ul li button {
     display: flex;
     flex-flow: column;
@@ -45,13 +50,13 @@ ul li button {
 
 }
 
-/* 아이콘 사이즈,컬러 */
+/* �꾩씠肄� �ъ씠利�,而щ윭 */
 ul li i {
     font-size: 20px;
     color: #045fd4;
 }
 
-/* 태그, 가운데 정렬 */
+/* �쒓렇, 媛��대뜲 �뺣젹 */
 h1 {
     font-family: 'IBMPlexSansKR-Bold';
     font-weight: bolder;
@@ -63,7 +68,7 @@ h1 {
     width: 100%;
     margin-top: 20px;
 }
-/* 헤더 부분 이미지 */
+/* �ㅻ뜑 遺�遺� �대�吏� */
 .fu {
     display: flex;
 }
@@ -78,14 +83,20 @@ header .icons {
 }
 header div img {
     width: 100px;
+    position: absolute;
+    right: 133px;
 }
 .nni {
     width: 80px;
+    position: absolute;
+    right: 55px;
 }
 .ni {
     width: 45px;
+    position: absolute;
+    right: 10px;
 }
-
+/* �댁뒪��~ more 遺�遺� �꾩씠肄� */
 .icon {
     display: flex;
     justify-content: center;
@@ -101,7 +112,7 @@ header div img {
     width: 100%;
 }
 
-/* .은 클래스 */
+/* .�� �대옒�� */
 .naver_input {
     border: 1px solid #2dcb2d;
     display: flex;
@@ -114,8 +125,8 @@ header div img {
     padding: 10px;
 }
 
-/* 가상설렉터 방식 */
-/* .naver_input의 자식은 input 이다 -> 이걸 가상 설렉트로 표현 하면 밑에 사용을 보여줌! */
+/* 媛��곸꽕�됲꽣 諛⑹떇 */
+/* .naver_input�� �먯떇�� input �대떎 -> �닿구 媛��� �ㅻ젆�몃줈 �쒗쁽 �섎㈃ 諛묒뿉 �ъ슜�� 蹂댁뿬以�! */
 .naver_input input {
     border: none;
 }
@@ -124,19 +135,19 @@ header div img {
     color: #2dcb2d;
 }
 
-/* one이랑 같은 부모를 가진 형제를 지정 해줌 */
+/* one�대옉 媛숈� 遺�紐⑤� 媛�吏� �뺤젣瑜� 吏��� �댁쨲 */
 /*
 .one + .one{
     color: blueviolet;
 }
 */
 
-/* #은 아이디 */
+/* #�� �꾩씠�� */
 .naver_input .fas {
     color: #2dcb2d;
 }
 
-/* 터치바 */
+/* �곗튂諛� */
 .naver_input .scber {
     flex: 1 1 70%;
     margin-left: 2px;
@@ -152,33 +163,87 @@ header div img {
     flex-flow: column;
     align-items: center;
     /*justify-content: center;*/
-    margin: 0 10px;
     padding: 100px;
-}
-.wr {
-    align-items: end;
-    width: 100px;
-    height: 60px;
-    margin: 0 auto;
 }
 .weather {
     border: 1px solid #7b7b7b;
     height: 5px;
     display: flex;
-    align-content: center;
-    margin: 0 auto;
+    align-content: start;
     padding: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 80%;
     /*border: none;*/
+}
+.mn {
+    justify-self: start;
+    width: 60px;
+    height: 60px;
+}
+.wr {
+    position: relative;
+    right: -130px;
+    width: 100px;
+    height: 60px;
+}
+.jj {
+    border-left: 1px solid black;
+    height: 30px;
 }
 
 .wea {
     display: flex;
     flex-flow: column;
 }
-/* 독립이미지 , 텍스트 */
+
+/* �좎뵪�대�吏� */
+
+.coli{
+    border: 1px solid #7b7b7b;
+    /*width: 525px;*/
+    height: 240px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /*margin: 10px;*/
+    /*margin-left: 165px;*/
+    padding: 15px;
+
+}
+.coli button {
+    height: 40px;
+    font-size: 15px;
+    color: #838282;
+
+}
+.b1 {
+    height: 40px;
+    width: 95px;
+}
+.b2 {
+    height: 40px;
+    width: 120px;
+}
+.b3 {
+    height: 40px;
+    width: 70px;
+}
+.b4 {
+    height: 40px;
+    width: 95px;
+}
+
+.coimg {
+    display: flex;
+    justify-content: center;
+    width: 460px;
+    height: 150px;
+}
+
+/* �낅┰�대�吏� , �띿뒪�� */
 .lnfo {
     border: 1px solid ;
     height: 70px;
@@ -223,4 +288,8 @@ header div img {
     color: #aeadad;
     margin-top: 20px;
     margin-bottom: 100px;
+}
+
+section{
+    text-align: center;
 }
