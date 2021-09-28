@@ -20,7 +20,6 @@
 
 }
 
-/* 紐⑤뱺 �쒓렇�� �⑤뵫,留덉쭊 鍮쇰쾭由ш퀬 諛뺤뒪�ъ씠利덈룄 �⑤뵫,留덉쭊 類꾨븣 �ы븿�섏뼱 寃곗젙�섎뒗寃�*/
 * {
     padding: 0;
     margin: 0;
@@ -31,13 +30,12 @@
 body {
     font-family: Roboto;
 }
-/* �뱀뀡 */
+
 .main {
     margin: 0 auto;
     flex-direction: column;
 }
 
-/* �꾩씠肄�,而щ윭 �ｊ퀬 以묒븰�뺣젹 */
 ul li button {
     display: flex;
     flex-flow: column;
@@ -50,13 +48,11 @@ ul li button {
 
 }
 
-/* �꾩씠肄� �ъ씠利�,而щ윭 */
 ul li i {
     font-size: 20px;
     color: #045fd4;
 }
 
-/* �쒓렇, 媛��대뜲 �뺣젹 */
 h1 {
     font-family: 'IBMPlexSansKR-Bold';
     font-weight: bolder;
@@ -68,35 +64,40 @@ h1 {
     width: 100%;
     margin-top: 20px;
 }
-/* �ㅻ뜑 遺�遺� �대�吏� */
+
 .fu {
     display: flex;
 }
+
 .fuu {
     margin-left: auto;
 
 }
+
 header .icons {
     flex-direction: row;
     margin: 10px;
     color: #838282;
 }
+
 header div img {
     width: 100px;
     position: absolute;
     right: 133px;
 }
+
 .nni {
     width: 80px;
     position: absolute;
     right: 55px;
 }
+
 .ni {
     width: 45px;
     position: absolute;
     right: 10px;
 }
-/* �댁뒪��~ more 遺�遺� �꾩씠肄� */
+
 .icon {
     display: flex;
     justify-content: center;
@@ -112,7 +113,6 @@ header div img {
     width: 100%;
 }
 
-/* .�� �대옒�� */
 .naver_input {
     border: 1px solid #2dcb2d;
     display: flex;
@@ -125,8 +125,6 @@ header div img {
     padding: 10px;
 }
 
-/* 媛��곸꽕�됲꽣 諛⑹떇 */
-/* .naver_input�� �먯떇�� input �대떎 -> �닿구 媛��� �ㅻ젆�몃줈 �쒗쁽 �섎㈃ 諛묒뿉 �ъ슜�� 蹂댁뿬以�! */
 .naver_input input {
     border: none;
 }
@@ -135,19 +133,16 @@ header div img {
     color: #2dcb2d;
 }
 
-/* one�대옉 媛숈� 遺�紐⑤� 媛�吏� �뺤젣瑜� 吏��� �댁쨲 */
 /*
 .one + .one{
     color: blueviolet;
 }
 */
 
-/* #�� �꾩씠�� */
 .naver_input .fas {
     color: #2dcb2d;
 }
 
-/* �곗튂諛� */
 .naver_input .scber {
     flex: 1 1 70%;
     margin-left: 2px;
@@ -165,6 +160,7 @@ header div img {
     /*justify-content: center;*/
     padding: 100px;
 }
+
 .weather {
     border: 1px solid #7b7b7b;
     height: 5px;
@@ -178,17 +174,20 @@ header div img {
     width: 80%;
     /*border: none;*/
 }
+
 .mn {
     justify-self: start;
     width: 60px;
     height: 60px;
 }
+
 .wr {
     position: relative;
     right: -130px;
     width: 100px;
     height: 60px;
 }
+
 .jj {
     border-left: 1px solid black;
     height: 30px;
@@ -199,9 +198,8 @@ header div img {
     flex-flow: column;
 }
 
-/* �좎뵪�대�吏� */
 
-.coli{
+.coli {
     border: 1px solid #7b7b7b;
     /*width: 525px;*/
     height: 240px;
@@ -213,24 +211,29 @@ header div img {
     padding: 15px;
 
 }
+
 .coli button {
     height: 40px;
     font-size: 15px;
     color: #838282;
 
 }
+
 .b1 {
     height: 40px;
     width: 95px;
 }
+
 .b2 {
     height: 40px;
     width: 120px;
 }
+
 .b3 {
     height: 40px;
     width: 70px;
 }
+
 .b4 {
     height: 40px;
     width: 95px;
@@ -243,9 +246,8 @@ header div img {
     height: 150px;
 }
 
-/* �낅┰�대�吏� , �띿뒪�� */
 .lnfo {
-    border: 1px solid ;
+    border: 1px solid;
     height: 70px;
     display: flex;
     margin: 0 auto;
@@ -255,14 +257,17 @@ header div img {
     justify-content: center;
 
 }
+
 .lf {
     width: 70px;
 }
+
 .lff {
     font-size: 20px;
     vertical-align: middle;
     color: #9f9f9f;
 }
+
 .lfft {
     color: #7b7b7b;
 }
@@ -275,13 +280,16 @@ header div img {
     justify-content: center;
 
 }
+
 .te {
     text-align: center;
     color: #b5b4b4;
 }
+
 .bt {
     color: #9f9f9f;
 }
+
 .xt {
     font-family: 'IBMPlexSansKR-Bold';
     font-size: 30px;
@@ -290,6 +298,7 @@ header div img {
     margin-bottom: 100px;
 }
 
-section{
+section {
     text-align: center;
 }
+
