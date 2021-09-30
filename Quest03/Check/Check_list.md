@@ -126,11 +126,11 @@
   * 익명함수 : 이름이 없는 함수로, 즉시 실행이 필요할 경우 사용
   
   
-    (function () {
+        (function () {
         
-       //logic
+          //logic
         
-    })();
+        })();
 
 
 * 자바스크립트의 Arrow function은 무엇일까요?
