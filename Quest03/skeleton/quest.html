@@ -32,19 +32,45 @@
 			<div class="square"></div>
 		</section>
 
-		<script>
-			let row1Squares = document.querySelectorAll('.row1 .square');
+		<script>  // querySelectorAll 이 뭔지 알아내기   // 선택자 공부하기
+			let row1Squares = document.querySelectorAll('.row1 .square');  // 띄어쓰기 : row1으로 한정을 짓다. row1의 자식 square
 			for(let node of row1Squares) {
 				// for of : row1Squares 를 node 에 담아라
 				/* TODO: node 변수를 어떻게 조작해야 할까요? */
-				document.createAttribute("button");
+				node.addEventListener("click", () => {
+					if(node.style.backgroundColor === 'yellow' ){
+						node.style.backgroundColor = 'white'      // node에 들어가는 백그라운드컬러가 옐로우냐? 맞음 화이트로 바꿔라!
+					}else {                                       // 아니면 옐로우로 다시 바꿔! 라는 뜻
+						node.style.backgroundColor = 'yellow'
+					}
+				})
 
 			}
 
-			let row2Squares = document.querySelectorAll('.row2 .square');
-			for(let node of row2Squares) {
-				/* TODO: node 변수를 어떻게 조작해야 할까요? */
-			}
+			var row2Squares = document.querySelectorAll('.row2 .square');
+			// for(let node of row2Squares) {
+			// 	/* TODO: node 변수를 어떻게 조작해야 할까요? */
+			// 	node.addEventListener("click", () => {
+			// 		node.classList.toggle('enabled');
+			// 	});
+			//
+			// }   // let 방식
+
+			// var 방식으로 실행
+				for(var node of row2Squares) {
+					node.addEventListener("click", function () {
+						this.classList.toggle('enabled');
+					});  // var 토글 방식
+
+				// 	node.addEventListener("click", function () {
+				// 			if(this.classList.toggle('enabled')) {
+				// 				// this.classList.add('enabled')
+				// 			}else (this.classList.remove('enabled'))
+				// 	}
+				// );   // add 는 추가 메서드 이기 때문에 제외해도 돌아감
+						// 첫 번째 방식이 좋다. 두번째 방식은 다 사용하여 풀이를 해보고 이해를 하기 위해 해봤다.
+				}
+
 		</script>
 	</body>
 </html>
