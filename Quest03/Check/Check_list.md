@@ -86,24 +86,27 @@
       * `document.querySelectorAll` : CSS 선택자에 해당하는 '모든' 'DOM Element' 를 잡아온다.
       * `getElementsByClassName` : '주어진 클래스 이름을 가진 모든 자식 요소를 배열과 같은 객체로 변환' 합니다.
     <br>
-    * [ DOM 객체에 CSS Class 제어 or 제거 방법 ]
+    * [ DOM 객체에 CSS Class 제어 or 제거 방법 ]<br>
       * Class 삭제하기 (classList.remove) : 지정한 class값을 제거합니다.<br>
-        `var removeClass = element.classList.remove('className');`
-      * `remove` : node를 제거 한다.
-        * `node` : 여러가지 `DOM`타입들이 상속하는 인터페이스
-        * `Document`, `Element`, `CharacterData`등..
+        `var removeClass = element.classList.remove('className');`<br>
+      * `remove` : node를 제거 한다.<br>
+        * `node` : 여러가지 `DOM`타입들이 상속하는 인터페이스<br>
+        * `Document`, `Element`, `CharacterData`등..<br>
         <br>
-        * (사용예시)
+        * (사용예시)<br>
     
   
             var el = document.querySelector('div');
     
             el.remove();
-        
-<br>
-  * IE9나 그 이전의 옛날 브라우저들에서는 어떻게 해야 하나요?<br>
-    * 
-    <br>
+
+
+* IE9나 그 이전의 옛날 브라우저들에서는 어떻게 해야 하나요?<br>
+    * CSS는 HTML 요소들이 각종 미디어에서 어떻게 보이는가를 정의하는 데 사용되는 스타일 시트 언어 이다.<br>
+    * 'HTML4' 부터는 이러한 '모든 서식 설정을 HTML 문서로부터 따로 분리하는 것이 가능' 해졌다.
+
+   <br>
+
   * 자바스크립트의 변수가 유효한 범위는 어떻게 결정되나요?<br>
     * "변수를 어디에서 접근할 수 있느냐" 를 가리킨다.<br>
       * 전역 유효범위는 코드 내에서 어디서든 변수에 접근할 수 있음을 의미<br>
@@ -139,9 +142,9 @@
   * 익명 함수의 소스 코드는 변수값이므로 끝에 세미콜론 ; 을 대입
   * 익명 함수는 호출시 변수명을 함수명처럼 사용하면 된다.
   <br>
-  * 변수에 함수의 코드를 저장하는 대신 '함수명'을 사용하지 않는다.
-  * 대신 '변수명'을 마치 함수명처럼 사용해서 함수를 호출하거나 변수 값을 이동시키는데 사용 할 수 있다.
-  * 익명함수 : 이름이 없는 함수로, 즉시 실행이 필요할 경우 사용
+  * 변수에 함수의 코드를 저장하는 대신 '함수명'을 사용하지 않는다.<br>
+  * 대신 '변수명'을 마치 함수명처럼 사용해서 함수를 호출하거나 변수 값을 이동시키는데 사용 할 수 있다.<br>
+  * 익명함수 : 이름이 없는 함수로, 즉시 실행이 필요할 경우 사용<br>
   
   
         (function () {
