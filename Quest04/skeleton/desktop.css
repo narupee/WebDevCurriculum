@@ -1,1 +1,62 @@
 /* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+
+.desktop .icons {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding: 3%;
+}
+
+i {
+    font-size: 100px;
+    margin: 50px;
+}
+
+.file {
+    color: white;
+}
+
+.folder {
+    color: rgba(226, 226, 171, 0.95);
+}
+
+#icons_click {
+    display: flex;
+}
+
+#icons_click button {
+    background-color: #ffb6c1;
+    border: none;
+}
+
+/* Context Menu */
+
+#dochi_context_menu {
+    font-size: 27px;
+}
+
+html, body { height: 100%; }
+
+.custom-context-menu {
+    position: absolute;
+    box-sizing: border-box;
+    min-height: 100px;
+    min-width: 150px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 2px lightgrey;
+}
+
+.custom-context-menu ul {
+    list-style: none;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.custom-context-menu li {
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.custom-context-menu li:hover {
+    background-color: #f0f0f0;
+}
