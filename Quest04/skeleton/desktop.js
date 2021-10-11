@@ -15,10 +15,15 @@ class Icon {
     //    result.innerHTML+= '<div>click</div>';
     // });
 
+    // drag() {
+    //     const icons_clicks = document.querySelectorAll("icons_click")
+    // }
+
 };
 
 class Folder {
     /* TODO: Folder 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
+
 
 };
 
@@ -26,7 +31,7 @@ class Window {
     /* TODO: Window 클래스는 어떤 멤버함수와 멤버변수를 가져야 할까요? */
 
     dragFile() {
-        const targets = document.querySelectorAll('.fa-folder');
+        const targets = document.querySelectorAll('#icons_click');
 
         for (let target of targets) { // 이미지가 찍혀도 div가 움직이도록.
 
@@ -64,3 +69,5 @@ class Window {
 
 
 };
+
+

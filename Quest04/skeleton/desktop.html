@@ -31,19 +31,19 @@
 
             <div id="icons_click">
 
-                <div>
+                <div class="content_icon">
                     <button type="button" name="icon" id="click1">
                         <i class="fas fa-file file"></i>
                     </button>
                 </div>
 
-                <div>
+                <div class="content_icon">
                     <button type="button" name="icon" id="click2">
                         <i class="fas fa-folder folder"></i>
                     </button>
                 </div>
 
-                <div>
+                <div class="content_icon">
                     <button type="button" name="icon" id="click3">
                         <i class="fas fa-folder folder"></i>
                     </button>
@@ -66,9 +66,21 @@
 </section>
 
 <script>
-    let myDesktop = new Desktop(
-        /* TODO: myDesktop 인스턴스의 생성자의 변수로 무엇이 들어가야 할까요? */
-    );
+
+</script>
+
+<script>
+    // let myDesktop = new Desktop(
+    //     /* TODO: myDesktop 인스턴스의 생성자의 변수로 무엇이 들어가야 할까요? */
+    // );
+
+    let myDesktop = document.getElementById('icons_click');
+    let myDesktop_icons = myDesktop.getElementsByTagName('div');
+    console.log(myDesktop_icons);
+    // console.log(myDesktop_icons [0]); : myDesktop_icons 는 모든 div를 가지고옴
+    // getElement"s"ByTagName('div'); : "s" 복수개의 div 태그를 다 가져옴
+    // [0] : 0번째 div를 가져옴
+
 
 </script>
 
@@ -105,5 +117,28 @@
 </script>
 
 
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
