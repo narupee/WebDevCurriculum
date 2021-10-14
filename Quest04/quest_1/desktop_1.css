@@ -1,0 +1,25 @@
+/* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+
+.file {
+    color: white;
+    font-size: 100px;
+    margin: 10px;
+
+    // move style
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.folder {
+    color: rgba(226, 226, 171, 0.95);
+    font-size: 100px;
+    margin: 10px;
+
+    // move style
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
