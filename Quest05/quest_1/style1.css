@@ -1,0 +1,39 @@
+/** {*/
+/*    !* TODO: 필요한 CSS를 채워넣어 보세요! *!*/
+/*    box-sizing: border-box;*/
+
+/*}*/
+
+
+/*고정법 찾기*/
+#editor {
+    padding: 16px  24px;
+    border: 2px solid #d6d6d6;
+    border-radius: 5px;
+}
+
+/* 이미지 */
+#img-selector {
+    display: none;
+}
+/*이미지 사이즈*/
+/*사진이 작을 경우 해당 사진의 크기로 삽입, 큰 사진 경우 에디터에 맞게 삽입*/
+#editor img {
+    max-width: 100%;
+}
+
+/* 텍스트 상태에 따라 버튼에 스타일을 적용 */
+button.active {
+    background-color: mediumpurple;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>나루피의 텍스트에디터</title>
+
+</head>
+
+<body>
+<!-- TODO: 이 곳을 채워 클라이언트를 만들어 보세요 -->
+
+
+<!--editor 메뉴-->
+<div class="editor-menu">
+    <button id="btn-new file">
+        N-file
+    </button>
+    <button id="btn-open load">
+        open
+    </button>
+    <button id="btn-save">
+        저장
+    </button>
+    <button id="btn-save as">
+        다른이름 저장
+    </button>
+    <button id="btn-bold">
+        <b>B</b>
+    </button>
+    <button id="btn-italic">
+        <i>I</i>
+    </button>
+    <button id="btn-underline">
+        <u>U</u>
+    </button>
+    <button id="btn-strike">
+        <s>S</s>
+    </button>
+    <button id="btn-ordered-list">
+        OL
+    </button>
+    <button id="btn-unordered-list">
+        UL
+    </button>
+    <button id="btn-image">
+        IMG
+    </button>
+</div>
+<div id="editor" contenteditable="true"></div>
+
+
+<!--이미지 부분-->
+<input id="img-selector" type="file" accept="image/*"/>
+
+
+<script src="notepad1.js"></script>
+<!--<script>-->
+<!--    let notepad = new Notepad();-->
+
+<!--</script>-->
+</body>
+</html>
+
+
