@@ -8,6 +8,7 @@ function makeNewFile() { // 새파일 만들기
     let tabList = document.getElementById("tabList"); // 돔요소 부모 부름
     tabnode.textContent = name;
     tabList.appendChild(tabnode);  // 부모한테 자식 넣음
+    textSave(name);
 
 }
 
@@ -49,6 +50,19 @@ function saveTarget(e) {
 
 saveBtn.addEventListener('click', e=> textSave(saveT));
 
+
+// 열기
+
+
+
+
+
+
+
+
+
+
+// 다른이름 저장
 
 
 
