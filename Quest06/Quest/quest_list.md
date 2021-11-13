@@ -1,9 +1,9 @@
 ## Quest
 * tracert(추적자)(Windows가 아닌 경우 traceroute(경로 추적)) 명령을 통해 www.google.com 까지 가는 경로를 찾아 보세요.
     * 어떤 IP주소들이 있나요?
-      * ㅇ
+      * 구글 IP
     * 그 IP주소들은 어디에 위치해 있나요?
-      * ㅇ
+      * 국내외 (구글 IP 주소 - www.google.com : 172.217.161.66)
       
 ### 추가
 * Traceroute (경로 추적)
