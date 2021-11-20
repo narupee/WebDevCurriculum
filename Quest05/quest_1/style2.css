@@ -7,11 +7,12 @@
 
 #editor {
     box-sizing: content-box;
+    justify-content: center;
     width: 600px;
     height: 500px;
     padding: 10px;
     border: 2px solid black;
-    display: flex;  /* flex는 부모한테만 주기 */
+    /*display: flex;  !* flex는 부모한테만 주기 *!*/
 
 }
 
@@ -19,6 +20,7 @@ textarea {
     width: 600px;
     height: 500px;
     border: 1px solid black;
+    display: none;
 }
 
 /*#text_menu {*/
@@ -48,7 +50,8 @@ textarea {
     position: absolute;
     right: 120px;
     top: 35px;
-
+    box-sizing: content-box;
+    justify-content: center;
 }
 
 .tabnode {
